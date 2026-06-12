@@ -1,0 +1,5 @@
+namedValues:
+  - name: environment
+    properties:
+      displayName: environment
+      value: prod
