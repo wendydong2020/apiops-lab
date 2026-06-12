@@ -4,7 +4,7 @@
 		<set-header name="X-Environment" exists-action="override">
 			<value>{{environment}}</value>
 		</set-header>
-		<rate-limit calls="100" renewal-period="60" />
+		<rate-limit calls="50" renewal-period="60" />
 	</inbound>
 	<backend>
 		<base />
