@@ -1,12 +1,18 @@
 {
   "properties": {
-    "displayName": "Greeting API",
-    "apiRevision": "1",
-    "subscriptionRequired": true,
     "path": "greeting",
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "displayName": "Greeting API",
+    "isCurrent": true,
     "protocols": [
       "https"
     ],
-    "isCurrent": true
+    "serviceUrl": "https://httpbin.org",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": true
   }
 }

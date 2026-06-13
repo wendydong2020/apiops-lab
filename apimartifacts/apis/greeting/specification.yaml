@@ -1,24 +1,37 @@
 openapi: 3.0.1
 info:
   title: Greeting API
-  version: "1.0"
+  version: '1.0'
 servers:
-  - url: https://httpbin.org
+  - url: https://apim-jw0612-dev.azure-api.net/greeting
 paths:
   /get:
     get:
       summary: Returns a greeting echo
+      description: Returns a greeting echo
       operationId: get-greeting
       parameters:
         - name: name
           in: query
-          required: false
           schema:
             type: string
       responses:
-        "200":
+        '200':
           description: Successful echo response
           content:
             application/json:
               schema:
                 type: object
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: Ocp-Apim-Subscription-Key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: [ ]
+  - apiKeyQuery: [ ]
