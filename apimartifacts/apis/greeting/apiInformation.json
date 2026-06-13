@@ -1,0 +1,12 @@
+{
+  "properties": {
+    "displayName": "Greeting API",
+    "apiRevision": "1",
+    "subscriptionRequired": true,
+    "path": "greeting",
+    "protocols": [
+      "https"
+    ],
+    "isCurrent": true
+  }
+}

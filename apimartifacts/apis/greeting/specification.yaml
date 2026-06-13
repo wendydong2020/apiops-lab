@@ -1,0 +1,24 @@
+openapi: 3.0.1
+info:
+  title: Greeting API
+  version: "1.0"
+servers:
+  - url: https://httpbin.org
+paths:
+  /get:
+    get:
+      summary: Returns a greeting echo
+      operationId: get-greeting
+      parameters:
+        - name: name
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Successful echo response
+          content:
+            application/json:
+              schema:
+                type: object
